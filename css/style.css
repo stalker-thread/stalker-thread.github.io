@@ -1,0 +1,100 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+/* Styling */
+@font-face {
+  font-family: stalker;
+  src: url(../fonts/S.T.A.L.K.E.R.v.3.ttf);
+}
+html {
+  background-color: #111516;
+  color: #ffffff;
+}
+.main-menu,
+.clock-block,
+aside,
+section {
+  border: 1px solid #2f2f37;
+}
+ul,
+.clock-block span {
+  background-color: #2f2f37;
+}
+a {
+  color: #3bcb38;
+}
+a:visited {
+  color: #ffffff;
+}
+a.active {
+  color: #c0a057;
+}
+h1 {
+  font-family: stalker;
+  font-size: 72px;
+}
+
+/* Layout */
+html {
+  height: 100%;
+}
+body {
+  padding: 5px;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+}
+header {
+  display: flex;
+  margin-bottom: 5px;
+}
+nav {
+  width: 100%;
+  padding: 3px;
+}
+nav a {
+  padding: 5px 10px;
+}
+ul {
+  list-style: none;
+  margin: 5px;
+  padding: 5px 0;
+}
+li {
+  display: inline-block;
+}
+li + li::before {
+  content: "//";
+  margin: 0 15px;
+}
+.clock-block {
+  width: 200px;
+  margin-left: 20px;
+  padding: 3px 0;
+}
+.clock-block span {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+}
+aside {
+  width: 20%;
+}
+section {
+  width: 100%;
+  margin-left: 20px;
+}
+aside,
+section {
+  padding: 15px;
+  overflow-y: scroll;
+  max-height: calc(100vh - 65px);
+  scrollbar-color: #2f2f37 transparent;
+}
+img {
+  width: 100%;
+}
