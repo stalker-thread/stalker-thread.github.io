@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function(){
     let time = new Date();
     let h = time.getHours();
     let i = time.getMinutes();
-    let d = time.getDay();
-    let m = time.getMonth();
+    let d = time.getDate();
+    let m = time.getMonth() + 1;
     let y = time.getFullYear();
     h = h < 10 ? "0" + h : h;
     i = i < 10 ? "0" + i : i;
