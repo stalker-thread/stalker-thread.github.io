@@ -69,7 +69,6 @@ nav li {
 }
 nav li + li::before {
   content: "//";
-  margin: 0 15px;
 }
 .clock-block {
   width: 200px;
