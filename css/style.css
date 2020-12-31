@@ -8,6 +8,7 @@
 html {
   background-color: #111516;
   color: #ffffff;
+  font-family: sans-serif, system-ui;
 }
 .main-menu,
 .clock-block,
@@ -15,7 +16,7 @@ aside,
 section {
   border: 1px solid #2f2f37;
 }
-ul,
+nav ul,
 .clock-block span {
   background-color: #2f2f37;
 }
@@ -53,16 +54,20 @@ nav {
 }
 nav a {
   padding: 5px 10px;
+  text-decoration: none;
 }
-ul {
+nav a:hover {
+  text-decoration: underline;
+}
+nav ul {
   list-style: none;
   margin: 5px;
   padding: 5px 0;
 }
-li {
+nav li {
   display: inline-block;
 }
-li + li::before {
+nav li + li::before {
   content: "//";
   margin: 0 15px;
 }
@@ -84,6 +89,19 @@ main {
 aside {
   width: 20%;
 }
+aside ul {
+  list-style: none;
+  margin: 10px 20px;
+}
+aside li {
+  margin: 10px 0;
+}
+aside li a {
+  text-decoration: none;
+}
+aside li a:hover {
+  text-decoration: underline;
+}
 section {
   width: 100%;
   margin-left: 20px;
@@ -97,6 +115,12 @@ section {
 }
 img {
   width: 100%;
+}
+::-webkit-scrollbar {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #2f2f37;
 }
 
 table {
