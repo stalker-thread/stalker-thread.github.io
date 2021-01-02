@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(){
-  setInterval(showTime, 60000);
+  setInterval(showTime, 1000);
   function showTime() {
     let time = new Date();
     let h = time.getHours();
