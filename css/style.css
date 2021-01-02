@@ -115,6 +115,9 @@ section {
 img {
   width: 100%;
 }
+img.preview {
+  width: auto;
+}
 ::-webkit-scrollbar {
   background-color: transparent;
 }
@@ -134,4 +137,14 @@ td, th {
 }
 tr:nth-child(even) {
   background-color: #2f2f37;
+}
+article + article {
+  border-top: 1px solid #2f2f37;
+}
+article {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+article p {
+  margin-bottom: 15px;
 }
