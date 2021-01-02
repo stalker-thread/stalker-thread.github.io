@@ -71,7 +71,7 @@ nav li + li::before {
   content: "//";
 }
 .clock-block {
-  width: 200px;
+  width: 220px;
   margin-left: 20px;
   padding: 3px 0;
 }
