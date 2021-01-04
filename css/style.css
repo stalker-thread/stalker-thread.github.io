@@ -148,3 +148,7 @@ article {
 article p {
   margin-bottom: 15px;
 }
+pre {
+  background: #2f2f37;
+  padding: 10px;
+}
