@@ -23,9 +23,6 @@ nav ul,
 a {
   color: #3bcb38;
 }
-a:visited {
-  color: #ffffff;
-}
 a.active {
   color: #c0a057;
 }
