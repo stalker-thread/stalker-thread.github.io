@@ -127,12 +127,30 @@ img.preview {
 table {
   border-collapse: collapse;
 }
+/* row num */
+table {
+  counter-reset: rowNumber;
+}
+table tr > td:first-child {
+  counter-increment: rowNumber;
+}
+table tr td:first-child::before {
+  content: counter(rowNumber);
+  min-width: 1em;
+  margin-right: 0.5em;
+}
+table tr td:first-child,
+table tr th:first-child {
+  min-width: 30px;
+}
+/* row num */
+
 table, th, td {
   border: 1px solid #2f2f37;
 }
 td, th {
   padding: 5px;
-  min-width: 200px;
+  min-width: 160px;
 }
 tr:nth-child(even) {
   background-color: #2f2f37;
