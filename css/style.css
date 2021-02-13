@@ -170,3 +170,14 @@ pre {
   background: #2f2f37;
   padding: 10px;
 }
+
+.img-container,
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.img-container img,
+.video-container video {
+  margin: 10px
+}
