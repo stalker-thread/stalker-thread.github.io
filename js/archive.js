@@ -14,10 +14,6 @@ document.addEventListener("DOMContentLoaded", function(){
       break;
   }
 
-  var latestLink = document.getElementById('latest_link');
-  latestLink.href = link;
-  latestLink.text = link;
-
   var bodies = table.tBodies;
   var yearLinks = document.getElementsByClassName('year-link');
   for (var i = 0; i < bodies.length; i++) {
