@@ -19,7 +19,10 @@ document.addEventListener("DOMContentLoaded", function(){
     }
   };
 
+  // Redirects when one of links was clicked.
   window.addEventListener("hashchange", redirect);
+
+  // Redirects if page was already loaded with hash.
   redirect();
 
   var bodies = table.tBodies;
